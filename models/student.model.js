@@ -7,10 +7,12 @@ const studentSchema = mongoose.Schema({
     type: String,
     enum: ["First Year", "Second Year", "Third Year", "Fourth Year"],
   },
+
   stream: {
     type: String,
     enum: ["Science", "Commerce", "Arts"],
   },
+
   subjects: [
     {
       name: String,
